@@ -30,8 +30,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Lib1, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Lib1.0.1.0-alpha0003\lib\net461\Lib1.dll</HintPath>
+    <Reference Include="Lib1, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\Lib1.0.1.0-alpha0004\lib\net461\Lib1.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
