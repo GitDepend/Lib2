@@ -10,7 +10,7 @@ namespace Lib1
 	{
 		public bool Verify(string password)
 		{
-			return StringUtils.Trim(password) == "SUPER SECRET";
+			return StringUtils.TrimEnd(password) == "SUPER SECRET";
 		}
 	}
 }
