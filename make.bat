@@ -16,6 +16,8 @@ if /i "%1%" == "" (
     goto :NMAKE
 ) else if /i "%1%" == "teamcity" (
     goto :NMAKE
+) else if /i "%1%" == "update" (
+    goto :NMAKE
 ) else if /i "%1%" == "clean" (
     goto :NMAKE
 )
@@ -48,4 +50,5 @@ echo   all         : Builds both debug and release artifacts, runs unit tests,
 echo                 and captures coverage information
 echo   teamcity    : Runs the full build (same as all) but does not generate
 echo                 html reports
+echo   update      : Updates all dependencies
 echo   clean       : Cleans the build

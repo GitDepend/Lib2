@@ -5,6 +5,7 @@ NUGET_OUTPUT_DIRECTORY=artifacts\NuGet
 GITVERSION_VERSION=3.6.2
 NUNIT_RUNNERS_VERSION=2.6.4
 REPORT_UNIT_VERSION=1.2.1
+GITDEPEND_VERSION=0.2.0-beta0005
 DOTCOVER_VERSION=2016.2.20160913.100041
 
 debug: package-debug reset
@@ -13,6 +14,7 @@ cov: generate-code-coverage-report generate-unit-test-report reset
 prod: package-release reset
 all: package-debug generate-code-coverage-report generate-unit-test-report package-release doc reset
 teamcity: package-debug capture-code-coverage package-release documentation reset
+update: update-dependencies reset
 
 doc: documentation reset
     @start docs\build\html\index.html
@@ -44,6 +46,20 @@ install-reportunit:
     @nuget install ReportUnit -Version $(REPORT_UNIT_VERSION) -OutputDirectory $(PACKAGES_DIR)
 
     @echo ##teamcity[blockClosed name='Install ReportUnit']
+
+install-gitdepend:
+    @echo ##teamcity[blockOpened name='Install GitDepend.CommandLine']
+
+    @nuget install GitDepend.CommandLine -Version $(GITDEPEND_VERSION) -OutputDirectory $(PACKAGES_DIR) -pre
+
+    @echo ##teamcity[blockClosed name='Install GitDepend.CommandLine']
+
+update-dependencies: install-gitdepend
+    @echo ##teamcity[blockOpened name='Update Dependencies']
+
+    @$(PACKAGES_DIR)\GitDepend.CommandLine.$(GITDEPEND_VERSION)\tools\GitDepend.exe update
+
+    @echo ##teamcity[blockClosed name='Update Dependencies']
 
 version: install-gitversion
     @echo ##teamcity[blockOpened name='Set Version']
