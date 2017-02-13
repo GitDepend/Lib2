@@ -7,8 +7,8 @@
     <ProjectGuid>{7B3CB697-87F8-41F4-AF57-939023E36C43}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Lib1</RootNamespace>
-    <AssemblyName>Lib1</AssemblyName>
+    <RootNamespace>Lib2</RootNamespace>
+    <AssemblyName>Lib2</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
