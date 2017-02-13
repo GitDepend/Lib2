@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Lib1
 {
-	public class StringUtils
+	public class PasswordVerifier
 	{
-		public static string Trim(string str)
+		public bool Verify(string password)
 		{
-			return str.Trim();
+			return StringUtils.Trim(password) == "SUPER SECRET";
 		}
 	}
 }
