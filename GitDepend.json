@@ -5,5 +5,12 @@
   "packages": {
     "dir": "artifacts/NuGet/Debug"
   },
-  "dependencies": []
+  "dependencies": [
+    {
+      "name": "Lib1",
+      "url": "git@github.com:kjjuno/Lib1.git",
+      "dir": "../Lib1",
+      "branch": "develop"
+    }
+  ]
 }
