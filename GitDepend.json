@@ -1,0 +1,9 @@
+{
+  "build": {
+    "script": "make.bat"
+  },
+  "packages": {
+    "dir": "artifacts/NuGet/Debug"
+  },
+  "dependencies": []
+}
