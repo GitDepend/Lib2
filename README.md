@@ -28,7 +28,7 @@ Build the solution with `make.bat`
       "name": "Lib1",
       "url": "https://github.com/GitDepend/Lib1.git",
       "dir": "../Lib1",
-      "branch": "develop"
+      "branch": "master"
     }
   ]
 }
