@@ -16,6 +16,7 @@ Build the solution with `make.bat`
 
 ```json
 {
+  "name": "Lib2",
   "build": {
     "script": "make.bat"
   },
@@ -25,7 +26,7 @@ Build the solution with `make.bat`
   "dependencies": [
     {
       "name": "Lib1",
-      "url": "git@github.com:kjjuno/Lib1.git",
+      "url": "https://github.com/GitDepend/Lib1.git",
       "dir": "../Lib1",
       "branch": "develop"
     }
