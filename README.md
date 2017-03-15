@@ -18,14 +18,14 @@ Build the solution with `make.bat`
 {
   "name": "Lib2",
   "build": {
-    "script": "make.bat"
+    "script": "make.bat",
+    "arguments": ""
   },
   "packages": {
     "dir": "artifacts/NuGet/Debug"
   },
   "dependencies": [
     {
-      "name": "Lib1",
       "url": "https://github.com/GitDepend/Lib1.git",
       "dir": "../Lib1",
       "branch": "master"
