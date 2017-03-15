@@ -1,5 +1,5 @@
 # Lib2
-Example Repository for [GitDepend](https://github.com/kjjuno/GitDepend)
+Example Repository for [GitDepend](https://github.com/GitDepend/GitDepend)
 
 This is the 2nd level repository.
 
